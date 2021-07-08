@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">Admin BakatInd</string>
+    <string name="sign_up_now">Daftar Sekarang</string>
+    <string name="input_email">Masukan Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Lupa Password?</string>
+    <string name="btn_login">Masuk</string>
+    <string name="txt_register">Belum punya akun?</string>
+    <string name="email_password_null">Email atau Password Tidak Boleh Kosong</string>
+    <string name="email_not_valid">Email Tidak Valid</string>
+    <string name="request_error">Terjadi Kesalahan, Silakan Coba Lagi</string>
+    <string name="error_user_not_found">Email atau Password Salah</string>
+    <string name="error_wrong_password">Password yang anda masukan salah</string>
+    <string name="error_request">Terjadi kesalahan, silakan coba lagi</string>
+    <string name="ic_class_list">Kelas</string>
+    <string name="ic_teacher_list">Pemateri</string>
+    <string name="tv_time">Senin, 06.00 – 13.00</string>
+    <string name="tv_total_student">0 Santri</string>
+    <string name="tv_lesson">Materi Skill</string>
+    <string name="tv_teacher_name">Teacher Name</string>
+    <string name="tv_student_name">Student Name</string>
+
+    <string name="tv_no_class_found">Belum Ada Kelas Yang Dibuat</string>
+    <string name="tv_level">Level 1a</string>
+    <string name="tv_not_teacher_register">Tidak ada Pelajar yang mendaftar</string>
+    <string name="email">Email</string>
+    <string name="btn_accept">Konfirmasi</string>
+    <string name="nomor">Nomor WA</string>
+    <string name="tv_not_teachers">Belum ada yang terdaftar</string>
+    <string name="success_add_student">Pelajar Berhasil Ditambahkan</string>
+    <string name="success_add_teacher">Pemateri Berhasil Ditambahkan</string>
+    <string name="create_class">Buat Kelas</string>
+    <string name="create_new_class">Buat</string>
+    <string name="lesson_name">Materi Skill</string>
+    <string name="tv_level_class">Level Kelas :</string>
+    <string name="input_date">Hari</string>
+    <string name="registered">Terdaftar</string>
+    <string name="newRegistrants">Pendaftar Baru</string>
+    <string name="add_teacher">Tambahkan Pelajar (+)</string>
+    <string name="request_data">...........</string>
+    <string name="input_number">Nomor Induk</string>
+    <string name="show_email">Email: %1$s</string>
+    <string name="show_phone">No. Telepon: %1$s</string>
+    <string name="show_register_number">Nomor Induk: %1$s</string>
+    <string name="btn_select">Pilih</string>
+    <string name="btn_delete">Hapus</string>
+    <string name="btn_change">Ubah</string>
+    <string name="check_profile">Lihat Profil</string>
+    <string name="admin">Admin</string>
+
+    <string-array name="levels">
+        <item>1a</item>
+        <item>1b</item>
+        <item>2a</item>
+        <item>2b</item>
+        <item>3a</item>
+        <item>3b</item>
+        <item>4a</item>
+        <item>4b</item>
+        <item>5a</item>
+        <item>5b</item>
+        <item>Kelas Pondok</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="request_logout">Logout Berhasil</string>
+    <string name="input_time">Waktu</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="btn_input_number">Masukan Nomor Induk</string>
+    <string name="btn_save">Simpan</string>
+    <string name="input_level">Level</string>
+    <string name="input_starttime">Mulai</string>
+    <string name="input_endtime">Selesai</string>
+    <string name="edit_class">Edit Kelas</string>
+    <string name="no_post_active">Belum Ada Postingan</string>
+    <string name="message">Pesan</string>
+    <string name="no_data">-</string>
+    <string name="no_lesson_data">Tidak Ada Data Yang Dapat Ditampilkan</string>
+    <string name="view_assignment">Unduh File</string>
+    <string name="ic_student_list">Pelajar</string>
+    <string name="ic_lesson_list">Materi Skill</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Hapus</string>
+    <string name="unable_to_access">Fitur Belum Bisa Diakses</string>
+    <string name="unable_to_access_note">Tidak terdapat media tulisan, silakan pilih media yang lain</string>
+    <string name="tv_type">Jenis Media:</string>
+    <string name="tv_book">Tulisan</string>
+    <string name="tv_video">Video</string>
+    <string name="tv_audio">Audio</string>
+    <string name="menu_add_lesson">Tambah Materi Skill</string>
+    <string name="success_upload_post">File Berhasil Diupload</string>
+    <string name="upload_failed">Upload Gagal, Silakan Coba Lagi</string>
+    <string name="tv_progress">Mengupload File</string>
+    <string name="btn_upload">Pilih Gambar</string>
+    <string name="upload_lesson_success">Materi Berhasil Ditambahkan</string>
+    <string name="edit_lesson_success">Materi Berhasil Diedit</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_add_link">Tambahkan</string>
+    <string name="edit_class_success">Kelas Berhasil Diedit</string>
+    <string name="upload_class_success">Kelas Berhasil Ditambahkan</string>
+    <string name="tv_link">Link</string>
+    <string name="btn_delete_user">Hapus Pengguna</string>
+    <string name="tv_status">Status :</string>
+    <string name="unable_to_access_link">Tidak terdapat media, silakan pilih media lainnya</string>
+    <string name="rb_trial">Free Trial</string>
+    <string name="rb_subscribe">Subscribe</string>
+    <string name="subscribe">Sudah Terdaftar</string>
+    <string name="subscribe_class">Berlangganan</string>
+    <string name="profile">Profil</string>
+    <string name="notSubscribe">Pendaftar Baru</string>
+    <string name="btn_detail">Tampilkan Detail</string>
+    <string name="tv_not_class">Belum Berlangganan Kelas</string>
+    <string name="tv_class_name">Kelas</string>
+    <string name="btn_delete_subs">Hapus Langganan</string>
+    <string name="lesson_layout">Pilih Skill Materi</string>
+    <string name="class_layout">Pilih Kelas</string>
+    <string name="subscribe_layout">Pilih Waktu Berlangganan</string>
+    <string name="btn_add_class">Tambahkan Kelas</string>
+    <string name="player_error">Video Player Error</string>
+    <string name="number_admin">Nomor WA Admin</string>
+    <string name="number_accounting">"Nomor WA Accounting "</string>
+    <string name="number_cs1">Nomor WA CS</string>
+    <string name="number_cs2">Nomor WA CS2</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_setting">Pengaturan</string>
+    <string name="class_list">Kelas</string>
+    <string name="tv_not_teacher_class">Belum ada kelas yang ditambahkan</string>
+    <string name="student_list">Pelajar</string>
+    <string name="review">Ulasan</string>
+    <string name="tv_no_data">Belum Ada Data</string>
+    <string name="tv_subclass">Nama Sub Kelas</string>
+    <string name="subject_list">Daftar Materi</string>
+    <string name="tv_not_teacher_subject">Belum ada materi yang ditambahkan</string>
+    <string name="menu_approve">Setujui</string>
+    <string name="menu_lesson">Lihat Materi</string>
+    <string name="tv_no_student">Belum ada pelajar yang terdaftar</string>
+    <string name="tv_no_review">Belum ada ulasan</string>
+    <string name="tv_review">Ulasan</string>
+    <string name="menu_search">Search</string>
+    <string name="subclass_list">Sub Kelas</string>
+    <string name="tv_not_teacher_subclass">Belum ada Sub Kelas yang ditambahkan</string>
+    <string name="btn_duplicate_class">Simpan</string>
+    <string name="menu_duplicate">Duplikat</string>
+    <string name="subclass_layout">Nama Sub Kelas</string>
+    <string name="gambar_slider_1">Gambar Slider 1</string>
+    <string name="gambar_slider_2">Gambar Slider 2</string>
+    <string name="gambar_slider_3">Gambar Slider 3</string>
+    <string name="menu_banner">Ubah Gambar Slider</string>
+    <string name="subclass">Sub Kelas</string>
+    <string name="tv_total_students">Jumlah Pelajar:</string>
+    <string name="input_lesson_name">Nama Materi Skill</string>
+    <string name="input_subclass_name">Nama Sub Kelas</string>
+    <string name="layout_lesson_name">Nama Kelas</string>
+    <string name="add_menu">+</string>
+    <string name="layout_link">Masukan Link WA / Telegram</string>
+    <string name="btn_score">Beri Nilai</string>
+    <string name="btn_edit_score">Ubah Nilai</string>
+    <string name="tv_score">Nilai: 0</string>
+    <string name="layout_score">Beri Nilai 10 sampai 100</string>
+    <string name="layout_message">Pesan Untuk Siswa</string>
+    <string name="btn_send">Kirim</string>
+    <string name="bonus_layout">Pilih Bonus Waktu</string>
+</resources>

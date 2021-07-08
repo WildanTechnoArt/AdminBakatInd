@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.firebase.crashlytics'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('A:\\GooglePlayKey\\AdminKlikKerja')
+            storePassword 'thenextdeveloper77'
+            keyAlias 'adminklikkerja'
+            keyPassword 'thenextdeveloper77'
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.project.adminklikkerja"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        buildConfigField "String", "YOUTUBE_API_KEY", "\"AIzaSyDaIZVlrGKu0XsMvON0v8UdOLS0LibswxY\""
+        signingConfig signingConfigs.config
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.github.clans:fab:1.6.4'
+
+    implementation platform('com.google.firebase:firebase-bom:26.7.0')
+
+    // Firebase Core / Analitycs
+    implementation 'com.google.firebase:firebase-core:19.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Firebase Cloud Firestore
+    implementation 'com.google.firebase:firebase-firestore'
+
+    // FirebaseUI for Cloud Firestore
+    implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+
+    // FirebaseUI for Firebase Auth
+    implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
+
+    // Firebase Storage
+    implementation 'com.google.firebase:firebase-storage'
+
+    //Icon / Image
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'id.zelory:compressor:2.1.0'
+
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+    //Material Design
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //Icon / Image
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+
+    // Progress Button
+    implementation 'com.github.razir.progressbutton:progressbutton:2.1.0'
+
+    // Chat Bubble
+    implementation 'com.github.lguipeng:BubbleView:1.0.1'
+
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+}
+apply plugin: 'com.google.gms.google-services'

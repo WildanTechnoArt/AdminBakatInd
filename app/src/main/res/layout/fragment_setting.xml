@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/appbar"
+                layout="@layout/toolbar_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_admin"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="@string/number_admin"
+                android:visibility="visible"
+                app:helperText=" Fungsi approved dan teknis"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_slider3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_accounting"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/number_accounting"
+                android:visibility="visible"
+                app:helperText="Fungsi pengechekan pembayaran"
+                app:layout_constraintEnd_toEndOf="@+id/layout_admin"
+                app:layout_constraintStart_toStartOf="@+id/layout_admin"
+                app:layout_constraintTop_toBottomOf="@+id/layout_admin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_accounting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cs1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/number_cs1"
+                android:visibility="visible"
+                app:helperText="Fungsi utama masalah customer"
+                app:layout_constraintEnd_toEndOf="@+id/layout_accounting"
+                app:layout_constraintStart_toStartOf="@+id/layout_accounting"
+                app:layout_constraintTop_toBottomOf="@+id/layout_accounting">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_cs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_cs2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/number_cs2"
+                android:visibility="visible"
+                app:helperText="Fungsi malasah customer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/layout_cs1"
+                app:layout_constraintStart_toStartOf="@+id/layout_cs1"
+                app:layout_constraintTop_toBottomOf="@+id/layout_cs1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_cs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/btn_save"
+                android:visibility="gone"
+                app:cornerRadius="@dimen/btn_corner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/layout_cs2"
+                app:layout_constraintStart_toStartOf="@+id/layout_cs2"
+                app:layout_constraintTop_toBottomOf="@+id/layout_cs2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_slider1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/gambar_slider_1"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_slider1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_slider1"
+                app:layout_constraintStart_toStartOf="@+id/tv_slider1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slider1"
+                app:srcCompat="@drawable/ic_image_200" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_slider2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/gambar_slider_2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_slider1"
+                app:layout_constraintStart_toStartOf="@+id/tv_slider1"
+                app:layout_constraintTop_toBottomOf="@+id/img_slider1" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_slider2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_slider2"
+                app:layout_constraintStart_toStartOf="@+id/tv_slider2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slider2"
+                app:srcCompat="@drawable/ic_image_200" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_slider3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/gambar_slider_3"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_slider2"
+                app:layout_constraintStart_toStartOf="@+id/tv_slider2"
+                app:layout_constraintTop_toBottomOf="@+id/img_slider2" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_slider3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_slider3"
+                app:layout_constraintStart_toStartOf="@+id/tv_slider3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slider3"
+                app:srcCompat="@drawable/ic_image_200" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_slider1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#D32F2F"
+                app:tint="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/img_slider1"
+                app:layout_constraintEnd_toEndOf="@+id/img_slider1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slider1"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_baseline_add_photo_24"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_slider2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#D32F2F"
+                app:layout_constraintBottom_toBottomOf="@+id/img_slider2"
+                app:layout_constraintEnd_toEndOf="@+id/img_slider2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slider2"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_baseline_add_photo_24"
+                app:tint="@color/colorWhite"
+                tools:ignore="ContentDescription" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_slider3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#D32F2F"
+                app:layout_constraintBottom_toBottomOf="@+id/img_slider3"
+                app:layout_constraintEnd_toEndOf="@+id/img_slider3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slider3"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_baseline_add_photo_24"
+                app:tint="@color/colorWhite"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

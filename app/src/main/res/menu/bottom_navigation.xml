@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/lesson_list"
+        android:icon="@drawable/ic_book"
+        android:title="@string/ic_lesson_list" />
+
+    <item
+        android:id="@+id/student_list"
+        android:icon="@drawable/ic_teacher_list"
+        android:title="@string/ic_student_list" />
+
+    <item
+        android:id="@+id/teacher_list"
+        android:icon="@drawable/ic_lesson"
+        android:title="@string/ic_teacher_list" />
+
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/menu_setting" />
+
+</menu>
